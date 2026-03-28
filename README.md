@@ -58,5 +58,3 @@ Portfolio-ArnavJoshi/
 │── script.js
 │── assets/
 
-## Deployment
-This portfolio is intended to be deployed as a static website using platforms like:
