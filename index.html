@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arnav Joshi | Futuristic Portfolio</title>
+  <meta name="description" content="Arnav Joshi - AI/ML Enthusiast | Web Developer | UI/UX Focused Builder" />
+
+  <!--
+    FILE STRUCTURE
+    1. Keep this file as index.html
+    2. Place styles in styles.css
+    3. Place logic in script.js
+
+    IMAGE SETUP
+    - Put your personal/profile image inside: ./assets/profile.png
+    - Put your logo/icon inside: ./assets/logo.png
+    - Update the file names below if needed.
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-dot"></div>
+  <div class="screen-noise"></div>
+  <div class="cyber-stars" id="cyberStars"></div>
+
+  <!-- INTRO SEQUENCE -->
+  <div class="intro-sequence" id="introSequence" aria-hidden="true">
+    <!-- STAGE 1: PORTFOLIO LOADING SHOWCASE -->
+    <section class="intro-stage stage-portfolio active" id="stagePortfolio">
+      <div class="intro-grid"></div>
+      <div class="intro-scan"></div>
+      <div class="intro-core intro-core-1"></div>
+      <div class="intro-core intro-core-2"></div>
+
+      <div class="stage-shell">
+        <div class="stage-topline">SYSTEM VISUALIZATION // ARNAV JOSHI // PORTFOLIO INTERFACE</div>
+
+        <div class="massive-intro-text">
+          <span class="glitch-line glitch-red" data-text="PORTFOLIO">PORTFOLIO</span>
+          <span class="glitch-line glitch-white" data-text="LOADING">LOADING</span>
+        </div>
+
+        <div class="intro-orbit-area">
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-3"></div>
+          <div class="center-node"></div>
+          <div class="data-beam beam-1"></div>
+          <div class="data-beam beam-2"></div>
+          <div class="data-beam beam-3"></div>
+        </div>
+
+        <div class="terminal-cluster terminal-cluster-left">
+          <p>&gt; INITIALIZING PERSONAL BRAND ENGINE</p>
+          <p>&gt; MAPPING PROJECT ARCHITECTURE</p>
+          <p>&gt; SYNCING UI/UX LAYERS</p>
+        </div>
+
+        <div class="terminal-cluster terminal-cluster-right">
+          <p>&gt; AUTHENTICATING INTERFACE NODES</p>
+          <p>&gt; PREPARING IMMERSIVE DISPLAY</p>
+          <p>&gt; SIGNAL LOCK: STABLE</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 2: 0 to 100 LOADING -->
+    <section class="intro-stage stage-loader" id="stageLoader">
+      <div class="loader-background-grid"></div>
+      <div class="loader-panel">
+        <div class="loader-mini-tag">BOOT PROTOCOL / MAIN INTERFACE</div>
+        <h2 class="loader-title">LOADING SYSTEM</h2>
+        <p class="loader-copy">Decrypting modules, verifying assets, calibrating cinematic interface, and preparing portfolio environment.</p>
+
+        <div class="loader-bar-wrap">
+          <div class="loader-bar-track">
+            <div class="loader-bar-fill" id="loaderBarFill"></div>
+          </div>
+        </div>
+
+        <div class="loader-meta-row">
+          <span class="loader-status" id="loaderStatus">Initializing modules...</span>
+          <span class="loader-percentage" id="loaderPercentage">0%</span>
+        </div>
+
+        <div class="loader-console">
+          <p id="consoleLine1">Injecting motion engine...</p>
+          <p id="consoleLine2">Rendering portfolio shell...</p>
+          <p id="consoleLine3">Synchronizing identity panel...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 3: ACCESS GRANTED -->
+    <section class="intro-stage stage-access" id="stageAccess">
+      <div class="access-core"></div>
+      <div class="access-box">
+        <div class="access-icon-wrap">
+          <div class="access-lock"></div>
+        </div>
+        <div class="access-small">AUTHENTICATION COMPLETE</div>
+        <h2 class="access-title">ACCESS GRANTED</h2>
+        <p class="access-copy">Launching Arnav Joshi portfolio interface...</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- MAIN SITE -->
+  <div class="site-wrapper" id="siteWrapper">
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="#home" class="brand">
+          <span class="brand-logo-frame">
+            <!-- ADD YOUR LOGO IMAGE HERE -->
+            <!-- Replace ./assets/logo.png with your own file path if needed -->
+            <img src="./assets/logo.png" alt="Arnav Joshi Logo" class="brand-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <span class="brand-fallback">AJ</span>
+          </span>
+          <span class="brand-text">ARNAV JOSHI</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section" id="home">
+        <div class="hero-grid-overlay"></div>
+        <div class="container hero-inner">
+          <div class="hero-left reveal-up">
+            <span class="section-chip red-zone">PERSONAL PORTFOLIO // CYBER INTERFACE</span>
+            <h1 class="hero-title">
+              ARNAV <span class="red-zone">JOSHI</span>
+            </h1>
+            <h2 class="hero-role">AI/ML Enthusiast | Web Developer | UI/UX Focused Builder</h2>
+            <p class="hero-description">
+              I am a first-year CSE (Data Science) student at VIT Chennai with strong interest in AI/ML, web development, and design-conscious digital experiences. I enjoy building projects that feel polished, immersive, and useful while continuously growing through hackathons, events, LeetCode problem solving, and deeper study in Python, C, and DSA.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="action-btn primary red-zone">View Projects</a>
+              <a href="#contact" class="action-btn secondary">Contact Me</a>
+              <a href="https://www.linkedin.com/in/arnav-joshi-997426334/" target="_blank" rel="noreferrer" class="action-btn ghost">Resume / Connect</a>
+            </div>
+
+            <div class="hero-stats">
+              <article class="stat-card">
+                <strong>AI/ML</strong>
+                <span>Concept-driven learning and growing model understanding</span>
+              </article>
+              <article class="stat-card">
+                <strong>Frontend</strong>
+                <span>Focused on polished interfaces and premium user experience</span>
+              </article>
+              <article class="stat-card">
+                <strong>DSA</strong>
+                <span>Actively improving problem solving through regular practice</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-right reveal-up delay-1">
+            <div class="profile-panel">
+              <div class="panel-topline">
+                <span>IDENTITY NODE</span>
+                <span>STATUS: ACTIVE</span>
+              </div>
+
+              <div class="profile-frame">
+                <!-- ADD YOUR PROFILE IMAGE HERE -->
+                <!-- Replace ./assets/profile.png with your own photo file path if needed -->
+                <img src="./assets/PortfolioImg.png" alt="Arnav Joshi Profile" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-placeholder">
+                  <div class="placeholder-rings"></div>
+                  <div class="placeholder-avatar"></div>
+                  <span>ADD PROFILE IMAGE</span>
+                </div>
+              </div>
+
+              <div class="profile-meta-tags">
+                <span>VIT CHENNAI</span>
+                <span>CSE (DATA SCIENCE)</span>
+                <span>MULTIPLE HACKATHON PARTICIPANT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="about">
+        <div class="container">
+          <div class="section-heading reveal-up">
+            <div>
+              <span class="heading-chip">ABOUT</span>
+              <h2>DRIVEN BY CURIOSITY, SHAPED BY BUILDING</h2>
+            </div>
+            <p>
+              I am focused on learning deeply, creating strong visual experiences, and building a real technical foundation across AI/ML, frontend development, and problem solving.
+            </p>
+          </div>
+
+          <div class="two-col-grid">
+            <article class="glass-card reveal-up">
+              <h3>Personal Snapshot</h3>
+              <p>
+                As a first-year student, I am actively exploring how logic, interface design, and technical depth can combine into products that feel meaningful instead of generic. I care a lot about clear structure, strong visuals, and real usability.
+              </p>
+              <ul class="detail-list">
+                <li>First-year student at VIT Chennai</li>
+                <li>Branch: CSE (Data Science)</li>
+                <li>Interested in AI/ML, web development, and problem solving</li>
+              </ul>
+            </article>
+
+            <article class="glass-card reveal-up delay-1">
+              <h3>Growth Mindset</h3>
+              <p>
+                I enjoy hackathons and time-bound builds because they force fast thinking, decision making, and execution. I am especially drawn toward projects where design quality and technical learning grow together.
+              </p>
+              <ul class="detail-list">
+                <li>Actively learning Python, C, and DSA in greater depth</li>
+                <li>Practicing problem solving through LeetCode</li>
+                <li>Focused on meaningful projects and long-term technical growth</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="education">
+        <div class="container">
+          <div class="section-heading reveal-up">
+            <div>
+              <span class="heading-chip">EDUCATION</span>
+              <h2>ACADEMIC FOUNDATION</h2>
+            </div>
+            <p>
+              My degree forms the base of my technical journey while I keep building portfolio projects and strengthening practical development skills.
+            </p>
+          </div>
+
+          <div class="timeline-card reveal-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">CURRENT</span>
+              <h3>VIT Chennai</h3>
+              <h4>B.Tech / CSE (Data Science)</h4>
+              <p>Currently in 1st Year, actively building fundamentals in programming, DSA, and applied technical exploration through projects and learning.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="experience">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <div>
+        <span class="heading-chip">EXPERIENCE</span>
+        <h2>REAL TEAM EXPOSURE</h2>
+      </div>
+      <p>
+        Along with personal learning, I am gaining collaborative development exposure through student organization work, hackathons, workshops, and competitions.
+      </p>
+    </div>
+
+    <div class="timeline-card reveal-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">FEB 2026 – PRESENT</span>
+        <h3>Web Development Team Member</h3>
+        <h4>Enactus VITC</h4>
+        <p>
+          Contributing as part of the club’s web development team and gaining practical exposure through collaborative development and design-oriented work. This role is helping me understand structured implementation, teamwork, and design-conscious execution in a more practical environment.
+        </p>
+      </div>
+    </div>
+
+    <div class="participation-wrapper reveal-up">
+      <div class="participation-grid">
+        <article class="participation-card" data-target="hackathons">
+          <div class="project-label">CATEGORY 01</div>
+          <h3>Hackathons</h3>
+          <p>
+            Fast-paced builds focused on problem solving, AI-driven thinking, and meaningful real-world applications under time constraints.
+          </p>
+          <span class="participation-open">View Details →</span>
+        </article>
+
+        <article class="participation-card" data-target="workshops">
+          <div class="project-label">CATEGORY 02</div>
+          <h3>Workshops</h3>
+          <p>
+            Technical learning experiences that expanded my understanding of AI systems, web development, and machine learning workflows.
+          </p>
+          <span class="participation-open">View Details →</span>
+        </article>
+
+        <article class="participation-card" data-target="competitions">
+          <div class="project-label">CATEGORY 03</div>
+          <h3>Competitions</h3>
+          <p>
+            Competitive events that strengthened my frontend thinking, analytical problem solving, and practical data science exposure.
+          </p>
+          <span class="participation-open">View Details →</span>
+        </article>
+      </div>
+
+      <!-- INLINE DETAILS PANEL -->
+      <div class="participation-display" id="participationDisplay">
+        <!-- HACKATHONS -->
+        <div class="participation-content" id="hackathons">
+          <div class="project-label">HACKATHONS</div>
+          <h3>Hackathon Participations</h3>
+
+          <div class="exp-detail-block">
+            <h4>Geminathon</h4>
+            <p>
+              Participated in a healthcare-focused 24-hour hackathon and worked on a privacy-aware hospital intelligence concept built around early warning signal detection and healthcare-oriented AI thinking.
+            </p>
+          </div>
+
+          <div class="exp-detail-block">
+            <h4>5G Hackathon</h4>
+            <p>
+              Built <strong>AgriOrbitz</strong>, an intelligent AgriTech platform for precision farming, water optimization, and pest prediction using real-time data-oriented ideas.
+            </p>
+          </div>
+
+          <div class="exp-detail-block">
+            <h4>Rushathon</h4>
+            <p>
+              Built <strong>SOSupport</strong>, an AI-powered emergency incident analysis platform designed to simulate real-time emergency response prioritization and smarter decision support.
+            </p>
+          </div>
+
+          
+          <div class="participation-image-grid">
+            <img src="./assets/GeminathonCertificate.png" alt="Hackathon image 1">
+            <img src="./assets/ARNAV JOSHI-5G Hackathon_page-0001.jpg" alt="Hackathon image 2">
+          </div>
+        </div>
+
+        <!-- WORKSHOPS -->
+        <div class="participation-content" id="workshops">
+          <div class="project-label">WORKSHOPS</div>
+          <h3>Workshop Participations</h3>
+
+          <div class="exp-detail-block">
+            <h4>Agentic AI Workshop</h4>
+            <p>
+              Explored modern ideas around autonomous AI systems, agent-based workflows, and the evolving practical direction of intelligent tools.
+            </p>
+          </div>
+
+          <div class="exp-detail-block">
+            <h4>Webverse</h4>
+            <p>
+              Strengthened my understanding of frontend structure, web interaction thinking, and the way modern websites are planned and built.
+            </p>
+          </div>
+
+          <div class="exp-detail-block">
+            <h4>Epochesques</h4>
+            <p>
+              Gained learning exposure to how machine learning models are built, trained, and understood through practical model-oriented discussion and exploration.
+            </p>
+          </div>
+
+          
+          <div class="participation-image-grid">
+            <img src="./assets/ARNAV JOSHI-Workshop on Agentic AI_page-0001.jpg" alt="Workshop image 1">
+          </div>
+        </div>
+
+        <!-- COMPETITIONS -->
+        <div class="participation-content" id="competitions">
+          <div class="project-label">COMPETITIONS</div>
+          <h3>Competition Participations</h3>
+
+          <div class="exp-detail-block">
+            <h4>Royale: From Data to Depth</h4>
+            <p>
+              Secured <strong>2nd Prize</strong> in this TechnoVIT’25 data-focused event, improving my understanding of Data Science, AI/ML, and analytical problem solving under pressure.
+            </p>
+          </div>
+
+          <div class="exp-detail-block">
+            <h4>CraftMySite</h4>
+            <p>
+              Built a portfolio website concept with emphasis on functionality, flexible structure, and proper project-and-event presentation.
+            </p>
+          </div>
+
+          <div class="exp-detail-block">
+            <h4>ML Model Wars</h4>
+            <p>
+              Participated in a machine learning-focused competition centered around model thinking, experimentation, and applied problem solving.
+            </p>
+          </div>
+
+         
+          <div class="participation-image-grid">
+            <img src="./assets/DataScienceTheRoyale Certificate.jpg" alt="Competition image 1">
+            <img src="./assets/CraftMySiteCertificate.png" alt="Competition image 2">
+            <img src="./assets/MLModelWarsCertificate.jpg" alt="Competition image 3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="content-section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal-up">
+            <div>
+              <span class="heading-chip">SKILLS</span>
+              <h2>CORE TECHNICAL STACK</h2>
+            </div>
+            <p>
+              A mix of frontend capabilities, growing AI/ML interest, and strong problem-solving focus.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal-up"><div class="skill-top"><h3>Python</h3><span>78%</span></div><div class="skill-bar"><span data-width="78%"></span></div></article>
+            <article class="skill-card reveal-up delay-1"><div class="skill-top"><h3>C</h3><span>72%</span></div><div class="skill-bar"><span data-width="72%"></span></div></article>
+            <article class="skill-card reveal-up delay-2"><div class="skill-top"><h3>HTML</h3><span>90%</span></div><div class="skill-bar"><span data-width="90%"></span></div></article>
+            <article class="skill-card reveal-up"><div class="skill-top"><h3>CSS</h3><span>30%</span></div><div class="skill-bar"><span data-width="30%"></span></div></article>
+            <article class="skill-card reveal-up delay-2"><div class="skill-top"><h3>Machine Learning</h3><span>65%</span></div><div class="skill-bar"><span data-width="65%"></span></div></article>
+            <article class="skill-card reveal-up"><div class="skill-top"><h3>UI/UX</h3><span>68%</span></div><div class="skill-bar"><span data-width="68%"></span></div></article>
+            <article class="skill-card reveal-up delay-1"><div class="skill-top"><h3>DSA</h3><span>40%</span></div><div class="skill-bar"><span data-width="40%"></span></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="services">
+        <div class="container">
+          <div class="section-heading reveal-up">
+            <div>
+              <span class="heading-chip">SERVICES / WHAT I DO</span>
+              <h2>DESIGN, STRUCTURE, INTERACTION</h2>
+            </div>
+            <p>
+              A student portfolio, but with a serious product mindset and strong visual direction.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal-up"><div class="service-icon">01</div><h3>UI/UX Designs</h3><p>Designing interfaces with strong visual hierarchy, better usability, and immersive feel.</p></article>
+            <article class="service-card reveal-up delay-1"><div class="service-icon">02</div><h3>Frontend Designs</h3><p>Building polished frontend experiences with responsive structure and premium presentation.</p></article>
+            <article class="service-card reveal-up delay-2"><div class="service-icon">03</div><h3>Website Layouts</h3><p>Creating page structures that feel clean, intentional, and easy to navigate.</p></article>
+            <article class="service-card reveal-up"><div class="service-icon">04</div><h3>Landing Page Designs</h3><p>Crafting strong first impressions with cinematic visual direction and modern styling.</p></article>
+            <article class="service-card reveal-up delay-1"><div class="service-icon">05</div><h3>ML Model Concepts</h3><p>Exploring how machine learning ideas can be shaped into meaningful product concepts.</p></article>
+            <article class="service-card reveal-up delay-2"><div class="service-icon">06</div><h3>Dataset-Based Training</h3><p>Working with ML ideas involving datasets, experimentation, and growing practical understanding.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal-up">
+            <div>
+              <span class="heading-chip">PROJECTS</span>
+              <h2>SELECTED WORK</h2>
+            </div>
+            <p>
+              Portfolio projects centered on strong UI/UX, thematic execution, and interface-level thinking.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal-up">
+              <div class="project-label red-zone">CASE 01</div>
+              <h3>AWSolve</h3>
+              <p>
+                A concept-based competitive programming event website created to demonstrate smooth navigation, structured information flow, and strong user understanding. The AWS Cloud Club name is real, while the event details are fictional for demonstration.
+              </p>
+              <div class="project-tags">
+                <span>UI/UX</span>
+                <span>Frontend Design</span>
+                <span>Event Website</span>
+                <span>Structured Flow</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://flourishing-scone-afa41d.netlify.app/" target="_blank" rel="noreferrer" class="action-btn primary small">Live Project</a>
+                <a href="https://github.com/arnav-joshi27" target="_blank" rel="noreferrer" class="action-btn secondary small">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal-up">
+              <div class="project-label">CASE 05</div>
+                <h3>Royale: From Data to Depth</h3>
+                <p>
+                  A competition-based machine learning project where I trained and refined a model using the provided dataset, focusing on analytical thinking, model building, and data-driven problem solving under pressure. I secured <strong>2nd Prize</strong> in this event.
+                </p>
+              <div class="project-tags">
+              <span>Machine Learning</span>
+              <span>Data Science</span>
+              <span>Kaggle</span>
+              <span>Competition</span>
+              </div>
+            <div class="project-actions">
+            <a href="https://www.kaggle.com/code/arnavjoshi27/2-bugs-1-code-task-2" target="_blank" rel="noreferrer noopener" class="action-btn primary small">Kaggle Notebook</a>
+            <a href="https://github.com/arnav-joshi27" target="_blank" rel="noreferrer noopener" class="action-btn secondary small">GitHub</a>
+          </div>
+        </article>
+
+            <article class="project-card reveal-up">
+                <div class="project-label">CASE 03</div>
+                <h3>SOSupport</h3>
+                <p>
+                An AI-powered emergency incident analysis platform built during RUSHATHON to simulate how intelligent systems can support real-time emergency response coordination.
+                </p>
+                <div class="project-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>Scikit-learn</span>
+                <span>Machine Learning</span>
+                <span>Dashboard UI</span>
+                </div>
+            <div class="project-actions">
+            <a href="https://v0-emergency-incident-analysis.vercel.app/" target="_blank" rel="noreferrer noopener" class="action-btn primary small">Live Project</a>
+            <a href="https://github.com/arnav-joshi27" target="_blank" rel="noreferrer noopener" class="action-btn secondary small">GitHub</a>
+            </div>
+            </article>
+
+
+            <article class="project-card reveal-up delay-2">
+              <div class="project-label">CASE 04</div>
+              <h3>Movie Review Dashboard</h3>
+              <p>
+                A frontend-focused concept for a modern movie analytics and review platform. The design emphasizes clean dashboard presentation, structured insights, and better information hierarchy.
+              </p>
+              <div class="project-tags">
+                <span>Dashboard UI</span>
+                <span>Frontend</span>
+                <span>Data Presentation</span>
+                <span>UX Design</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://v0-movie-review-dashboard.vercel.app/" target="_blank" rel="noreferrer" class="action-btn primary small">Live Project</a>
+                <a href="https://github.com/arnav-joshi27" target="_blank" rel="noreferrer" class="action-btn secondary small">GitHub</a>
+              </div>
+            </article>
+
+        <article class="project-card reveal-up delay-1">
+              <div class="project-label">CASE 05</div>
+              <h3>Deep Dive Into Marine Life</h3>
+              <p>
+                A UI/UX-focused marine life learning website designed as an immersive deep-sea experience. The atmosphere evolves visually as the user explores deeper levels, making the interface more thematic and memorable.
+              </p>
+              <div class="project-tags">
+                <span>UI/UX</span>
+                <span>Interactive Design</span>
+                <span>Thematic Experience</span>
+                <span>Learning Website</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://v0-marine-life-learning-website.vercel.app/" target="_blank" rel="noreferrer" class="action-btn primary small">Live Project</a>
+                <a href="https://github.com/arnav-joshi27" target="_blank" rel="noreferrer" class="action-btn secondary small">GitHub</a>
+              </div>
+            </article>
+
+        <article class="project-card reveal-up">
+          <div class="project-label">CASE 06</div>
+            <h3>CraftMySite Portfolio Concept</h3>
+              <p>
+                A portfolio website built for the CraftMySite competition, where the focus was on overall presentation, structure, design quality, and content richness. The project was created as a concept build using sample information to demonstrate portfolio flow and visual impact.
+              </p>
+          <div class="project-tags">
+          <span>Frontend</span>
+          <span>Portfolio Design</span>
+          <span>UI/UX</span>
+          <span>Competition</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://v0-portfolio-website-clone-seven-gamma.vercel.app/" target="_blank" rel="noreferrer noopener" class="action-btn primary small">Live Project</a>
+             <a href="https://github.com/arnav-joshi27/PORTFOLIO" target="_blank" rel="noreferrer noopener" class="action-btn secondary small">GitHub</a>
+          </div>
+        </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section contact-section" id="contact">
+        <div class="container">
+          <div class="section-heading reveal-up contact-heading-center">
+            <div>
+              <span class="heading-chip">COMMUNICATIONS</span>
+              <h2 class="contact-main-title">GET IN <span>TOUCH</span></h2>
+            </div>
+            <p>
+              Connect with Arnav Joshi for collaborations, project discussions, networking, and development opportunities.
+            </p>
+          </div>
+
+          <div class="contact-card-grid">
+            <a class="contact-connect-card reveal-up" href="https://mail.google.com/mail/?view=cm&fs=1&to=joshiarnav.27@gmail.com" target="_blank" rel="noreferrer noopener">
+            <div class="contact-icon email">
+            <img src="./assets/email image.png" alt="Email Icon">
+            </div>
+            <h3>EMAIL US</h3>
+            <p>joshiarnav.27@gmail.com</p>
+            <span>Connect →</span>
+            </a>
+
+            <a class="contact-connect-card linkedin-card reveal-up delay-1" href="https://www.linkedin.com/in/arnav-joshi-997426334/" target="_blank" rel="noreferrer noopener">
+              <div class="contact-icon linkedin">
+                <img src="./assets/LinkedIn Image.png" alt="LinkedIn Icon">
+              </div>
+              <h3>LINKEDIN</h3>
+              <p>Connect professionally</p>
+              <span>Connect →</span>
+            </a>
+
+            <a class="contact-connect-card reveal-up delay-2" href="tel:+917205688981">
+              <div class="contact-icon phone">
+                  <img src="./assets/phonecall img.jpg" alt="Call Icon">
+              </div>
+              <h3>CALL US</h3>
+              <p>+91 7205688981</p>
+              <span>Connect →</span>
+            </a>
+
+            <a class="contact-connect-card reveal-up" href="https://github.com/arnav-joshi27" target="_blank" rel="noreferrer">
+              <div class="contact-icon github">
+                <img src="./assets/Github img.jpg" alt="GitHub Icon">
+              </div>
+              <h3>GITHUB</h3>
+              <p>Explore repositories</p>
+              <span>Connect →</span>
+            </a>
+
+            <a class="contact-connect-card reveal-up delay-1" href="https://wa.me/917205688981" target="_blank" rel="noreferrer">
+              <div class="contact-icon whatsapp">
+                <img src="./assets/WhatsappImg.png" alt="WhatsApp Icon">
+              </div>
+              <h3>WHATSAPP</h3>
+              <p>Chat directly</p>
+              <span>Connect →</span>
+            </a>
+
+            <a class="contact-connect-card reveal-up" href="https://www.instagram.com/arnav_joshi.27/" target="_blank" rel="noreferrer">
+              <div class="contact-icon Instagram">
+                <img src="./assets/instagram image.jpg" alt="Instagram Icon">
+              </div>
+              <h3>Instagram</h3>
+              <p>Follow and Chat directly</p>
+              <span>Connect →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <h3>Arnav Joshi</h3>
+          <p>Ambitious student developer with strong AI/ML, web development, UI/UX, and DSA interest.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="https://github.com/arnav-joshi27" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/arnav-joshi-997426334/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+        <div class="footer-copy">© 2026 Arnav Joshi. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
